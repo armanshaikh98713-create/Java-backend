@@ -20,7 +20,7 @@ class HelloControllerTest {
     void helloEndpointReturnsSuccess() throws Exception {
         mockMvc.perform(get("/api/hello"))
                .andExpect(status().isOk())
-               .andExpect(jsonPath("$.message").value("Hello, Armaan!!"))
+               .andExpect(jsonPath("$.message").value("Hello, abdullah!!"))
                .andExpect(jsonPath("$.status").value("success"));
     }
 
